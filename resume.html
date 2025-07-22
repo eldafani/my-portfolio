@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      background: #575757;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .column {
+      flex: 1;
+      min-width: 250px;
+    }
+    .circle-img {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+    .about-text {
+      flex: 2;
+    }
+    .about-img {
+      flex: 1;
+      max-width: 250px;
+    }
+    .about-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .toggle-text {
+      display: none;
+    }
+    .toggle-button {
+      color: blue;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="consulting.html">Consulting</a>
+    <a href="publications.html">Publications</a>
+    <a href="intsvy.html">R 'intsvy'</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <h3>Education</h3>
+    <ul>
+      <li>PhD in Education, Freie Universität Berlin (2006–10)</li>
+      <li>MSc Interdisciplinary Studies, University of New Brunswick (2003–05)</li>
+      <li>BA in Economics, Universidad del Pacífico (1996–01)</li>
+    </ul>
+
+    <h3>Work experience</h3>
+    <ul>
+      <li>(2018– ) Independent Consultant (UNESCO, UNICEF, World Bank, OSF, IADB, MoES, etc)</li>
+      <li>(2016–18) Pathway Convenor, MSc Education (Research Design and Methodology), University of Oxford</li>
+      <li>(2012–18) Research Fellow, Oxford University Centre for Educational Assessment, University of Oxford</li>
+      <li>(2009–12) Research Analyst, International Association for the Evaluation of Educational Achievement (IEA)</li>
+    </ul>
+
+    <h3>Fellowships</h3>
+    <ul>
+      <li>(2014–15) Organisation for Economic Co-operation and Development (OECD), Thomas J. Alexander Programme</li>
+      <li>(2006–09) International Max Planck Research School LIFE</li>
+    </ul>
+  </section>
+
+
+  <script>
+    function toggleText(element) {
+      const text = element.nextElementSibling;
+      const isVisible = text.style.display === 'block';
+      text.style.display = isVisible ? 'none' : 'block';
+      element.textContent = isVisible ? 'Show More' : 'Show Less';
+    }
+  </script>
+</body>
+</html>
