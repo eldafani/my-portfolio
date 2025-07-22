@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>intsvy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      background: #575757;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .column {
+      flex: 1;
+      min-width: 250px;
+    }
+    .circle-img {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+    .about-text {
+      flex: 2;
+    }
+    .about-img {
+      flex: 1;
+      max-width: 250px;
+    }
+    .about-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .toggle-text {
+      display: none;
+    }
+    .toggle-button {
+      color: blue;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="consulting.html">Consulting</a>
+    <a href="publications.html">Publications</a>
+    <a href="intsvy.html">R 'intsvy'</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="rintsvy">
+    <h2>R 'intsvy'</h2>
+    <p>The R package ‘intsvy‘ provides analysis and visualisation tools for international assessment data (eg. PISA, TIMSS, PIRLS). 
+      Data analysis functions take into account the complex sample design (with replicate weights) and rotated test forms (with plausible achievement values) 
+      in the calculation of point estimates and standard errors of means, standard deviations, regression coefficients, correlation coefficients, and frequency tables. 
+      Visualisation tools present data aggregates in standardised graphical form.<p>
+
+    <p>Install development version:
+        library("devtools")
+        install_github("eldafani/intsvy")
+        library("intsvy")<p>
+    
+      <h3>Data analysis examples<h3>
+        <ul>
+          <li>PISA 2022<li>
+          <li>PIRLS 2021<li>
+          <li>SEA-PLM 2019<li>
+          <li>TIMSS 2023<li>
+        </ul>
+
+       <h3>Articles<h3>
+          <li>JSS article<li>
+          <li>IEA newsletter<li>
+          <li>R-bloggers (post 1, post 2)<li>
+          <li>OECD presentation<li>
+            
+       <h3>Video tutorials<h3>
+          <li>Video 1: Installing R ‘intsvy’<li>
+          <li>Video 2: Directory paths and operating systems<li>
+          <li>Video 3: Printing data labels<li>
+          <li>Video 4: Importing data<li>
+          <li>Video 5: Calculating average student performance<li>
+          <li>Video 6: Frequency tables<li>
+          <li>Video 7: Proficiency levels<li>
+          <li>Video 8: Regression analysis<li>
+
+       </section>
+
+
+  <script>
+    function toggleText(element) {
+      const text = element.nextElementSibling;
+      const isVisible = text.style.display === 'block';
+      text.style.display = isVisible ? 'none' : 'block';
+      element.textContent = isVisible ? 'Show More' : 'Show Less';
+    }
+  </script>
+</body>
+</html>
