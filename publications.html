@@ -122,5 +122,15 @@
       element.textContent = isVisible ? 'Show More' : 'Show Less';
     }
   </script>
+
+     <footer>
+    <p style="font-size: 0.8em; color: #888;">
+      © <span id="year"></span> Daniel Caro
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  
 </body>
 </html>
