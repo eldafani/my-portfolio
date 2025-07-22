@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      background: #575757;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .column {
+      flex: 1;
+      min-width: 250px;
+    }
+    .circle-img {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+    .about-text {
+      flex: 2;
+    }
+    .about-img {
+      flex: 1;
+      max-width: 250px;
+    }
+    .about-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .toggle-text {
+      display: none;
+    }
+    .toggle-button {
+      color: blue;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="consulting.html">Consulting</a>
+    <a href="publications.html">Publications</a>
+    <a href="intsvy.html">R 'intsvy'</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="contact">
+   <h2>Contact Me</h2>
+  <form action="mailto:dcarov@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+    <input type="submit" value="Send">
+  </form>
+  </section>
+
+
+  <script>
+    function toggleText(element) {
+      const text = element.nextElementSibling;
+      const isVisible = text.style.display === 'block';
+      text.style.display = isVisible ? 'none' : 'block';
+      element.textContent = isVisible ? 'Show More' : 'Show Less';
+    }
+  </script>
+</body>
+</html>
