@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      background: #575757;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .column {
+      flex: 1;
+      min-width: 250px;
+    }
+    .circle-img {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .toggle-text {
+      display: none;
+    }
+    .toggle-button {
+      color: blue;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Your Tagline or Role</p>
+  </header>
+  <nav>
+    <a href="#resume">Resume</a>
+    <a href="#consulting">Consulting</a>
+    <a href="#publications">Publications</a>
+    <a href="#rintsvy">R 'Intsvy'</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Download my <a href="#">PDF resume</a> or explore selected highlights below.</p>
+    <ul>
+      <li>Summary of qualifications...</li>
+      <li>Past positions...</li>
+      <li>Education...</li>
+    </ul>
+  </section>
+
+  <section id="consulting">
+    <h2>Consulting</h2>
+    <div class="columns">
+      <div class="column">
+        <img src="https://via.placeholder.com/180" alt="Policy" class="circle-img" />
+        <h3>Policy Research</h3>
+        <p>Through extensive international experience, I've gained different perspectives and methodological approaches for addressing key policy questions... <span class="toggle-button" onclick="toggleText(this)">Show More</span></p>
+        <p class="toggle-text">For UNESCO, I've contributed towards monitoring equity... (full content here).</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/180" alt="Data" class="circle-img" />
+        <h3>Data Solutions</h3>
+        <p>I am skilled in the analysis of large-scale complex data... <span class="toggle-button" onclick="toggleText(this)">Show More</span></p>
+        <p class="toggle-text">For UNESCO WIDE, I produced data for monitoring inequalities... (full content here).</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/180" alt="Capacity" class="circle-img" />
+        <h3>Capacity Building</h3>
+        <p>I've approached capacity building with a policy orientation... <span class="toggle-button" onclick="toggleText(this)">Show More</span></p>
+        <p class="toggle-text">I've led data trainings on large-scale assessments... (full content here).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li><strong>Title 1</strong> – <em>Journal name</em>, Year. [<a href="#">link</a>]</li>
+      <li><strong>Title 2</strong> – <em>Report or policy paper</em>. [<a href="#">link</a>]</li>
+    </ul>
+  </section>
+
+  <section id="rintsvy">
+    <h2>R 'intsvy'</h2>
+    <p>R package for analyzing international large-scale assessment data. Includes support for PISA, TIMSS, PIRLS...</p>
+    <p><a href="https://github.com/yourusername/intsvy">GitHub repo</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me via email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>Or connect on <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleText(element) {
+      const text = element.nextElementSibling;
+      const isVisible = text.style.display === 'block';
+      text.style.display = isVisible ? 'none' : 'block';
+      element.textContent = isVisible ? 'Show More' : 'Show Less';
+    }
+  </script>
+</body>
+</html>
