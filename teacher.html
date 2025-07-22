@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Training: Teacher data for policy monitoring</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      background: #575757;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .column {
+      flex: 1;
+      min-width: 250px;
+    }
+    .circle-img {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+    .about-text {
+      flex: 2;
+    }
+    .about-img {
+      flex: 1;
+      max-width: 250px;
+    }
+    .about-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .toggle-text {
+      display: none;
+    }
+    .toggle-button {
+      color: blue;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="consulting.html">Consulting</a>
+    <a href="publications.html">Publications</a>
+    <a href="intsvy.html">R 'intsvy'</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="teacher">
+    <p>The training comprises handouts, readings, exercises and assessments aimed at building and supporting skills for monitoring and making evidence-based decisions on teacher policy. 
+      The training is organized in three modules. Learning goals are described here. Pre-training readings are available here.<br><br>
+      
+      Module 1 presents the main areas and levels for teacher policy decisions. For each area, the underlying theory, policy context in Rwanda, and relevant indicators for
+      policy monitoring are presented.<br><br>
+      
+      Module 2 reviews basic concepts on data literacy. It introduces the definition and measurement of key education indicators, discusses data access policies, data structures 
+      and data interpretation, and presents basic descriptive and correlational statistics.<br><br> 
+      
+      Module 3 shows how to calculate and visualize indicators for teacher policy monitoring using the R statistical software. The module provides an introduction to R and its
+      basic commands. Using data from Rwanda’s Teacher management Information System (TMIS), you will learn how to create and visualize indicators for policy monitoring. 
+      Data, scripts, and exercises are provided.<br><br>
+      
+      You will start with the self-assessment, then complete the three modules, and finally conduct the self-assessment again to evaluate your learning.</p>
+    
+    <h3>Module 1: Teacher policy</h3>
+     <ul>
+      <li>Unit 1: Introduction to teacher policy monitoring (ppt, quiz)</li>
+      <li>Unit 2: Attractiveness of the teaching career (ppt, quiz)</li>
+      <li>Unit 3: Teacher availability (ppt, quiz)</li>
+      <li>Unit 4: Equity in teacher allocation (ppt, quiz)</li>
+      <li>Unit 5: Efficiency in teacher allocation (ppt, quiz)</li>
+      <li>Unit 6: Quality of teaching (ppt, quiz)</li>
+      <li>Unit 7: Projecting teacher demand (ppt, quiz)</li>
+     </ul>
+
+     <h3>Module 2: Data literacy</h3>
+  <ul>
+    <li>Unit 1: Education indicators: review of concepts and measurement (ppt, quiz)</li>
+    <li>Unit 2: Introduction to data literacy (ppt, quiz)</li>
+    <li>Unit 3: Data access and interpretation (ppt, quiz)</li>
+    <li>Unit 4: Descriptive statistics (ppt, quiz)</li>
+    <li>Unit 5 Correlational statistics (ppt, quiz)</li>
+  </ul>
+  
+    <h3>Module 3: Analyzing teacher data in R</h3>
+    <ul>
+    <li>Unit 1: Introduction to R (ppt)</li>
+    <li>Unit 2: Basic commands for data analysis (ppt, script)</li>
+    <li>Unit 3: Analyzing Rwanda TMIS data (ppt, data, script, exercise,)</li>
+    <li>Unit 4: Creating teaching indicators (ppt, data, script, exercise)</li>
+  </ul>
+
+    
+  </section>
+
+
+  <script>
+    function toggleText(element) {
+      const text = element.nextElementSibling;
+      const isVisible = text.style.display === 'block';
+      text.style.display = isVisible ? 'none' : 'block';
+      element.textContent = isVisible ? 'Show More' : 'Show Less';
+    }
+  </script>
+</body>
+</html>
